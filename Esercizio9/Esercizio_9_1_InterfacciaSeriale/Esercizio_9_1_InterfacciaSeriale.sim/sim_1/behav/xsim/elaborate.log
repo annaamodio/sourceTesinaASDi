@@ -1,0 +1,7 @@
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Interfaccia_seriale_behav xil_defaultlib.Interfaccia_seriale -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-8350] formal port 'data_serial_out' of mode 'out' cannot be associated with actual port 'data_serial_out' of mode 'in' [C:/Users/stefa_fil71sc/Desktop/Esercizio_9_1_InterfacciaSeriale/Esercizio_9_1_InterfacciaSeriale.srcs/sources_1/new/Interfaccia_seriale.vhd:22]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit interfaccia_seriale in library work failed.

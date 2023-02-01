@@ -1,0 +1,75 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Jan 12 15:44:45 2023
+# Process ID: 11640
+# Current directory: C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12684 C:\Users\stefa_fil71sc\Desktop\Esercizio_7_1_ComunicazioneHandshaking\Esercizio_7_1_ComunicazioneHandshaking.xpr
+# Log file: C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/vivado.log
+# Journal file: C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking\vivado.jou
+# Running On: LAPTOP-UF85CVI8, OS: Windows, CPU Frequency: 3302 MHz, CPU Physical cores: 4, Host memory: 16843 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sources_1/imports/Desktop/MUX_8_1.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sources_1/imports/Desktop/MUX_8_1.vhd
+file delete -force C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sources_1/imports/Desktop/MUX_8_1.vhd
+export_ip_user_files -of_objects  [get_files C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sim_1/imports/new/TB_Reg_pp.vhd] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sim_1/imports/new/TB_Reg_pp.vhd
+file delete -force C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sim_1/imports/new/TB_Reg_pp.vhd
+remove_files  -fileset sim_1 C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sim_1/imports/new/TB_Reg_pp.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+file mkdir C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sim_1/new/TB_Memoria.vhd w ]
+add_files -fileset sim_1 C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sim_1/new/TB_Memoria.vhd
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TB_Memoria [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source TB_Memoria.tcl
+close_sim
+launch_simulation
+source TB_Memoria.tcl
+close_sim
+launch_simulation
+source TB_Memoria.tcl
+restart
+relaunch_sim
+close_sim
+launch_simulation
+source TB_Memoria.tcl
+close_sim
+export_ip_user_files -of_objects  [get_files C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sources_1/imports/new/Reg_pp.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sources_1/imports/new/Reg_pp.vhd
+file delete -force C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sources_1/imports/new/Reg_pp.vhd
+remove_files  C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sources_1/imports/new/Reg_pp.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sim_1/new/SYS_B.vhd w ]
+add_files -fileset sim_1 C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sim_1/new/SYS_B.vhd
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sim_1/new/SYS_B.vhd] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sim_1/new/SYS_B.vhd
+file delete -force C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sim_1/new/SYS_B.vhd
+remove_files  -fileset sim_1 C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sim_1/new/SYS_B.vhd
+close [ open C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sources_1/new/SYS_B.vhd w ]
+add_files C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sources_1/new/SYS_B.vhd
+update_compile_order -fileset sources_1
+close [ open C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sources_1/new/OU_B.vhd w ]
+add_files C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sources_1/new/OU_B.vhd
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sources_1/new/OU_B.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sources_1/new/OU_B.vhd
+file delete -force C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sources_1/new/OU_B.vhd
+remove_files  C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sources_1/new/OU_B.vhd

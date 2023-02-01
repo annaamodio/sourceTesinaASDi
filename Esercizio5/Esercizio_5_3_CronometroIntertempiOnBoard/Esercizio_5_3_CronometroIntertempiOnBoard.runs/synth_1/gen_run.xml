@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1673371264">
+  <File Type="PA-TCL" Name="Cronometro_on_board.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Cronometro_on_board_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="Cronometro_on_board_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Cronometro_on_board.vds"/>
+  <File Type="RDS-UTIL" Name="Cronometro_on_board_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Cronometro_on_board_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Cronometro_on_board.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Cronometro_on_board_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Cronometro_on_board_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Banco_registri.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/display7seg/ButtonDebouncer.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../display7seg/ButtonDebouncer.vhd"/>
+        <Attr Name="ImportTime" Val="1673264340"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Cronometro_intertempi.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/display7seg/Encoder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../display7seg/Encoder.vhd"/>
+        <Attr Name="ImportTime" Val="1673263959"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Gestore_tempo.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/MUX_8_1.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/MUX_8_1.vhd"/>
+        <Attr Name="ImportTime" Val="1673366203"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/display7seg/OutputManager.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../display7seg/OutputManager.vhd"/>
+        <Attr Name="ImportTime" Val="1673263956"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Reg_sp.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lib/Lib.srcs/sources_1/new/Reg_sp.vhd"/>
+        <Attr Name="ImportTime" Val="1673365281"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/display7seg/anodes_manager.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../display7seg/anodes_manager.vhd"/>
+        <Attr Name="ImportTime" Val="1667465335"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/display7seg/cathodes_input_manager.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../display7seg/cathodes_input_manager.vhd"/>
+        <Attr Name="ImportTime" Val="1667466022"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/display7seg/cathodes_manager.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../display7seg/cathodes_manager.vhd"/>
+        <Attr Name="ImportTime" Val="1667466022"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/display7seg/clock_divider.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../display7seg/clock_divider.vhd"/>
+        <Attr Name="ImportTime" Val="1667464792"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/counter.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Eser5.1/Eser5.1.srcs/sources_1/new/counter.vhd"/>
+        <Attr Name="ImportTime" Val="1670242500"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/display7seg/counter_mod8.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../display7seg/counter_mod8.vhd"/>
+        <Attr Name="ImportTime" Val="1667465108"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/cronometro.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../cronometro/cronometro.srcs/sources_1/new/cronometro.vhd"/>
+        <Attr Name="ImportTime" Val="1670271370"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/display7seg/display_seven_segments.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../display7seg/display_seven_segments.vhd"/>
+        <Attr Name="ImportTime" Val="1667466010"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/display7seg/input_control_unit.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../display7seg/input_control_unit.vhd"/>
+        <Attr Name="ImportTime" Val="1673264333"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/display7seg/register_pp.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../display7seg/register_pp.vhd"/>
+        <Attr Name="ImportTime" Val="1673264331"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/display7seg/rete_di_acquisizione.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../display7seg/rete_di_acquisizione.vhd"/>
+        <Attr Name="ImportTime" Val="1673264336"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Cronometro_on_board.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Esercizio_5_1_CronometroOnBoard/Esercizio_5_1_CronometroOnBoard.srcs/sources_1/new/Cronometro_on_board.vhd"/>
+        <Attr Name="ImportTime" Val="1673266512"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Cronometro_on_board"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Downloads/Nexys-A7-100T-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/Nexys-A7-100T-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1673266002"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

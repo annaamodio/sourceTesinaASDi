@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1673189687">
+  <File Type="PA-TCL" Name="RiconoscitoreOnBoard.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="RiconoscitoreOnBoard_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="RiconoscitoreOnBoard_reports.tcl"/>
+  <File Type="RDS-RDS" Name="RiconoscitoreOnBoard.vds"/>
+  <File Type="RDS-UTIL" Name="RiconoscitoreOnBoard_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="RiconoscitoreOnBoard_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="RiconoscitoreOnBoard.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="RiconoscitoreOnBoard_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="RiconoscitoreOnBoard_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Documents/esempiVHDL/8_ROM_ON_DISPLAY/8_ROM_ON_DISPLAY.srcs/sources_1/imports/new/ButtonDebouncer.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../8_ROM_ON_DISPLAY/8_ROM_ON_DISPLAY.srcs/sources_1/imports/new/ButtonDebouncer.vhd"/>
+        <Attr Name="ImportTime" Val="1668091687"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Riconoscitore.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../progetto/Esercizio_3_1/Esercizio_3_1.srcs/sources_1/new/Riconoscitore.vhd"/>
+        <Attr Name="ImportTime" Val="1670310451"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Documents/progetto/cronometro/cronometro.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/clock_divider.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../progetto/cronometro/cronometro.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/clock_divider.vhd"/>
+        <Attr Name="ImportTime" Val="1544261516"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/input_control_unit.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/RiconoscitoreOnBoard/RiconoscitoreOnBoard.srcs/sources_1/new/input_control_unit.vhd"/>
+        <Attr Name="ImportTime" Val="1672744806"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/rete_acquisizione.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../progetto/RiconoscitoreOnBoardNew/RiconoscitoreOnBoard.srcs/sources_1/new/rete_acquisizione.vhd"/>
+        <Attr Name="ImportTime" Val="1672838299"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RiconoscitoreOnBoard.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../progetto/RiconoscitoreOnBoardNew/RiconoscitoreOnBoard.srcs/sources_1/new/RiconoscitoreOnBoard.vhd"/>
+        <Attr Name="ImportTime" Val="1672842222"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="RiconoscitoreOnBoard"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/progetto/Nexys-A7-100T-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../progetto/RiconoscitoreOnBoardNew/RiconoscitoreOnBoard.srcs/constrs_1/imports/progetto/Nexys-A7-100T-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1672838903"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

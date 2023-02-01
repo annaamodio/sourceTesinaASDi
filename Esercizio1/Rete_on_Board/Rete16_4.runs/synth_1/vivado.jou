@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sun Dec  4 13:10:19 2022
+# Process ID: 3588
+# Current directory: C:/Users/stefa_fil71sc/Desktop/Rete_on_Board/Rete16_4.runs/synth_1
+# Command line: vivado.exe -log rete16_4_onboard.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rete16_4_onboard.tcl
+# Log file: C:/Users/stefa_fil71sc/Desktop/Rete_on_Board/Rete16_4.runs/synth_1/rete16_4_onboard.vds
+# Journal file: C:/Users/stefa_fil71sc/Desktop/Rete_on_Board/Rete16_4.runs/synth_1\vivado.jou
+# Running On: LAPTOP-UF85CVI8, OS: Windows, CPU Frequency: 3302 MHz, CPU Physical cores: 4, Host memory: 16843 MB
+#-----------------------------------------------------------
+source rete16_4_onboard.tcl -notrace

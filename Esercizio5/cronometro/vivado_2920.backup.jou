@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Jan  3 12:39:19 2023
+# Process ID: 2920
+# Current directory: C:/Users/stefa_fil71sc/Desktop/cronometro
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6652 C:\Users\stefa_fil71sc\Desktop\cronometro\cronometro.xpr
+# Log file: C:/Users/stefa_fil71sc/Desktop/cronometro/vivado.log
+# Journal file: C:/Users/stefa_fil71sc/Desktop/cronometro\vivado.jou
+# Running On: LAPTOP-UF85CVI8, OS: Windows, CPU Frequency: 3302 MHz, CPU Physical cores: 4, Host memory: 16843 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/stefa_fil71sc/Desktop/cronometro/cronometro.xpr
+r
+update_compile_order -fileset sources_1

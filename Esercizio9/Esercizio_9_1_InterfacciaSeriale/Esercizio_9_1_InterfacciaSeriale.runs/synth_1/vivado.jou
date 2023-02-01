@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sat Jan 14 13:34:17 2023
+# Process ID: 5276
+# Current directory: C:/Users/stefa_fil71sc/Desktop/Esercizio_9_1_InterfacciaSeriale/Esercizio_9_1_InterfacciaSeriale.runs/synth_1
+# Command line: vivado.exe -log Interfaccia_seriale.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Interfaccia_seriale.tcl
+# Log file: C:/Users/stefa_fil71sc/Desktop/Esercizio_9_1_InterfacciaSeriale/Esercizio_9_1_InterfacciaSeriale.runs/synth_1/Interfaccia_seriale.vds
+# Journal file: C:/Users/stefa_fil71sc/Desktop/Esercizio_9_1_InterfacciaSeriale/Esercizio_9_1_InterfacciaSeriale.runs/synth_1\vivado.jou
+# Running On: LAPTOP-UF85CVI8, OS: Windows, CPU Frequency: 3302 MHz, CPU Physical cores: 4, Host memory: 16843 MB
+#-----------------------------------------------------------
+source Interfaccia_seriale.tcl -notrace

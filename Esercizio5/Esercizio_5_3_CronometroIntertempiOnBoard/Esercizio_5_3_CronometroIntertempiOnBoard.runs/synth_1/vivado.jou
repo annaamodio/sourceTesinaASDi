@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Jan 10 18:21:06 2023
+# Process ID: 21572
+# Current directory: C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.runs/synth_1
+# Command line: vivado.exe -log Cronometro_on_board.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Cronometro_on_board.tcl
+# Log file: C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.runs/synth_1/Cronometro_on_board.vds
+# Journal file: C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.runs/synth_1\vivado.jou
+# Running On: LAPTOP-UF85CVI8, OS: Windows, CPU Frequency: 3302 MHz, CPU Physical cores: 4, Host memory: 16843 MB
+#-----------------------------------------------------------
+source Cronometro_on_board.tcl -notrace

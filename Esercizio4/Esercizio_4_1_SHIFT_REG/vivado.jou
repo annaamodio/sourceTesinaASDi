@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sun Jan  8 11:42:41 2023
+# Process ID: 19256
+# Current directory: C:/Users/stefa_fil71sc/Desktop/Esercizio_4_1_SHIFT_REG
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21072 C:\Users\stefa_fil71sc\Desktop\Esercizio_4_1_SHIFT_REG\Esercizio_4_1_SHIFT_REG.xpr
+# Log file: C:/Users/stefa_fil71sc/Desktop/Esercizio_4_1_SHIFT_REG/vivado.log
+# Journal file: C:/Users/stefa_fil71sc/Desktop/Esercizio_4_1_SHIFT_REG\vivado.jou
+# Running On: LAPTOP-UF85CVI8, OS: Windows, CPU Frequency: 3302 MHz, CPU Physical cores: 4, Host memory: 16843 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/stefa_fil71sc/Desktop/Esercizio_4_1_SHIFT_REG/Esercizio_4_1_SHIFT_REG.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source shift_register_tb.tcl
+relaunch_sim
+save_wave_config {C:/Users/stefa_fil71sc/Desktop/Esercizio_4_1_SHIFT_REG/shift_register_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/stefa_fil71sc/Desktop/Esercizio_4_1_SHIFT_REG/shift_register_tb_behav.wcfg
+set_property xsim.view {C:/Users/stefa_fil71sc/Desktop/4_SHIFTREG/shift_register_tb_behav.wcfg C:/Users/stefa_fil71sc/Desktop/Esercizio_4_1_SHIFT_REG/shift_register_tb_behav.wcfg} [get_filesets sim_1]
+close_sim

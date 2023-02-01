@@ -1,0 +1,556 @@
+
+*** Running vivado
+    with args -log BlowfishOnBoard.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source BlowfishOnBoard.tcl
+
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source BlowfishOnBoard.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/utils_1/imports/synth_1/BlowfishOnBoard.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/utils_1/imports/synth_1/BlowfishOnBoard.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top BlowfishOnBoard -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19932
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1281.395 ; gain = 0.000
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-9112] actual for formal port 'bit_in' is neither a static name nor a globally static expression [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:32]
+WARNING: [Synth 8-2551] possible infinite loop; process does not have a wait statement [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/display7seg/cathodes_manager.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'BlowfishOnBoard' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/BlowfishOnBoard.vhd:46]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'register_pp' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/ES12/register_pp.vhd:34' bound to instance 'key' of component 'register_pp' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/BlowfishOnBoard.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'register_pp' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/ES12/register_pp.vhd:48]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'register_pp' (0#1) [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/ES12/register_pp.vhd:48]
+	Parameter n bound to: 8 - type: integer 
+	Parameter m bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'counter_n' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/counter.vhd:4' bound to instance 'contatore' of component 'counter_n' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/BlowfishOnBoard.vhd:186]
+INFO: [Synth 8-638] synthesizing module 'counter_n' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/counter.vhd:17]
+	Parameter n bound to: 8 - type: integer 
+	Parameter m bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter_n' (0#1) [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/counter.vhd:17]
+INFO: [Synth 8-3491] module 'Rs232RefComp' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/7-Interfaccia seriale/RS232RefComp.vhd:26' bound to instance 'interfaccia' of component 'Rs232RefComp' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/BlowfishOnBoard.vhd:199]
+INFO: [Synth 8-638] synthesizing module 'Rs232RefComp' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/7-Interfaccia seriale/RS232RefComp.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'Rs232RefComp' (0#1) [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/7-Interfaccia seriale/RS232RefComp.vhd:43]
+INFO: [Synth 8-3491] module 'FFD' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/Downloads/FFD.vhd:4' bound to instance 'flipflop' of component 'FFD' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/BlowfishOnBoard.vhd:216]
+INFO: [Synth 8-638] synthesizing module 'FFD' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/Downloads/FFD.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'FFD' (0#1) [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/Downloads/FFD.vhd:9]
+INFO: [Synth 8-3491] module 'Reg_sp' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/new/Reg_sp.vhd:8' bound to instance 'regSP' of component 'Reg_sp' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/BlowfishOnBoard.vhd:225]
+INFO: [Synth 8-638] synthesizing module 'Reg_sp' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/new/Reg_sp.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'Reg_sp' (0#1) [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/new/Reg_sp.vhd:17]
+INFO: [Synth 8-3491] module 'Blowfish' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/Blowfish.vhd:6' bound to instance 'blow' of component 'Blowfish' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/BlowfishOnBoard.vhd:235]
+INFO: [Synth 8-638] synthesizing module 'Blowfish' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/Blowfish.vhd:17]
+INFO: [Synth 8-3491] module 'ParteOperativa' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/ParteOperativa.vhd:34' bound to instance 'po' of component 'ParteOperativa' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/Blowfish.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'ParteOperativa' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/ParteOperativa.vhd:56]
+INFO: [Synth 8-3491] module 'Key_whitening' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/Key_whitening.vhd:34' bound to instance 'kw' of component 'Key_whitening' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/ParteOperativa.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'Key_whitening' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/Key_whitening.vhd:47]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'register_pp' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/ES12/register_pp.vhd:34' bound to instance 'reg_key' of component 'register_pp' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/Key_whitening.vhd:101]
+INFO: [Synth 8-3491] module 'Memoria' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/ES12/Memoria.vhd:8' bound to instance 'mem' of component 'Memoria' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/Key_whitening.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'Memoria' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/ES12/Memoria.vhd:23]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Memoria' (0#1) [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/ES12/Memoria.vhd:23]
+	Parameter n bound to: 18 - type: integer 
+	Parameter m bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'counter_n' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/counter.vhd:4' bound to instance 'cont_mem' of component 'counter_n' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/Key_whitening.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'counter_n__parameterized1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/counter.vhd:17]
+	Parameter n bound to: 18 - type: integer 
+	Parameter m bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter_n__parameterized1' (0#1) [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/counter.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'Key_whitening' (0#1) [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/Key_whitening.vhd:47]
+INFO: [Synth 8-3491] module 'Encrypter' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/Encrypter.vhd:34' bound to instance 'enc' of component 'Encrypter' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/ParteOperativa.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'Encrypter' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/Encrypter.vhd:49]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'register_pp' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/ES12/register_pp.vhd:34' bound to instance 'reg_msg' of component 'register_pp' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/Encrypter.vhd:132]
+INFO: [Synth 8-638] synthesizing module 'register_pp__parameterized2' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/ES12/register_pp.vhd:48]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'register_pp__parameterized2' (0#1) [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/ES12/register_pp.vhd:48]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'Selezionatore_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:8' bound to instance 'selec_msg' of component 'Selezionatore_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/Encrypter.vhd:142]
+INFO: [Synth 8-638] synthesizing module 'Selezionatore_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:20]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-638] synthesizing module 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'Mux_2_1' (0#1) [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:20]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'Selezionatore_2_1' (0#1) [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:20]
+INFO: [Synth 8-3491] module 'op_f' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/op_f.vhd:34' bound to instance 'f' of component 'op_f' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/Encrypter.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'op_f' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/op_f.vhd:40]
+INFO: [Synth 8-3491] module 'ROM' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/new/ROM.vhd:7' bound to instance 's0' of component 'ROM' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/op_f.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'ROM' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/new/ROM.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'ROM' (0#1) [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/new/ROM.vhd:21]
+INFO: [Synth 8-3491] module 'ROM1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/ROM1.vhd:7' bound to instance 's1' of component 'ROM1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/op_f.vhd:121]
+INFO: [Synth 8-638] synthesizing module 'ROM1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/ROM1.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'ROM1' (0#1) [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/ROM1.vhd:21]
+INFO: [Synth 8-3491] module 'ROM2' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/ROM2.vhd:7' bound to instance 's2' of component 'ROM2' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/op_f.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'ROM2' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/ROM2.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'ROM2' (0#1) [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/ROM2.vhd:21]
+INFO: [Synth 8-3491] module 'ROM3' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/ROM3.vhd:7' bound to instance 's3' of component 'ROM3' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/op_f.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'ROM3' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/ROM3.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'ROM3' (0#1) [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/ROM3.vhd:21]
+INFO: [Synth 8-3491] module 'F' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/F.vhd:35' bound to instance 'op' of component 'F' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/op_f.vhd:145]
+INFO: [Synth 8-638] synthesizing module 'F' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/F.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'F' (0#1) [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/F.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'op_f' (0#1) [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/op_f.vhd:40]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'Selezionatore_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:8' bound to instance 'selec_res' of component 'Selezionatore_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/Encrypter.vhd:164]
+INFO: [Synth 8-638] synthesizing module 'Selezionatore_2_1__parameterized1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:20]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Synth 8-3491] module 'Mux_2_1' declared at 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd:11' bound to instance 'mux_i' of component 'Mux_2_1' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:31]
+INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'Selezionatore_2_1__parameterized1' (0#1) [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd:20]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'register_pp_splited' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/ES12/register_pp_splited.vhd:51]
+	Parameter n bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'register_pp_splited' (0#1) [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/ES12/register_pp_splited.vhd:51]
+	Parameter n bound to: 5 - type: integer 
+	Parameter m bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'counter_n__parameterized3' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/counter.vhd:17]
+	Parameter n bound to: 5 - type: integer 
+	Parameter m bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter_n__parameterized3' (0#1) [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/counter.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'Encrypter' (0#1) [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/Encrypter.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'ParteOperativa' (0#1) [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/ParteOperativa.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'ControlUnit' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/ControlUnit.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'ControlUnit' (0#1) [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/ControlUnit.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'Blowfish' (0#1) [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/Blowfish.vhd:17]
+	Parameter n bound to: 32 - type: integer 
+	Parameter clock_frequency_in bound to: 5000000 - type: integer 
+	Parameter clock_frequency_out bound to: 500 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'display_seven_segments' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/display7seg/display_seven_segments.vhd:46]
+	Parameter clock_frequency_in bound to: 5000000 - type: integer 
+	Parameter clock_frequency_out bound to: 500 - type: integer 
+	Parameter clock_frequency_in bound to: 5000000 - type: integer 
+	Parameter clock_frequency_out bound to: 500 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'clock_divider' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/display7seg/clock_divider.vhd:22]
+	Parameter clock_frequency_in bound to: 5000000 - type: integer 
+	Parameter clock_frequency_out bound to: 500 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clock_divider' (0#1) [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/display7seg/clock_divider.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'counter_mod8' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/display7seg/counter_mod8.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'counter_mod8' (0#1) [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/display7seg/counter_mod8.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'cathodes_input_manager' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/display7seg/cathodes_input_manager.vhd:21]
+INFO: [Synth 8-226] default block is never used [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/display7seg/cathodes_input_manager.vhd:25]
+INFO: [Synth 8-226] default block is never used [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/display7seg/cathodes_input_manager.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'cathodes_input_manager' (0#1) [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/display7seg/cathodes_input_manager.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'cathodes_manager' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/display7seg/cathodes_manager.vhd:38]
+INFO: [Synth 8-226] default block is never used [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/display7seg/cathodes_manager.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'cathodes_manager' (0#1) [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/display7seg/cathodes_manager.vhd:38]
+INFO: [Synth 8-638] synthesizing module 'anodes_manager' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/display7seg/anodes_manager.vhd:39]
+INFO: [Synth 8-226] default block is never used [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/display7seg/anodes_manager.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'anodes_manager' (0#1) [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/display7seg/anodes_manager.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'display_seven_segments' (0#1) [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/display7seg/display_seven_segments.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'BlowfishOnBoard' (0#1) [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/new/BlowfishOnBoard.vhd:46]
+WARNING: [Synth 8-7129] Port fc in module ControlUnit is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1281.395 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1281.395 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1281.395 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1281.395 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/constrs_1/imports/digilent-xdc-master/Nexys-A7-100T-Master.xdc]
+Finished Parsing XDC File [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/constrs_1/imports/digilent-xdc-master/Nexys-A7-100T-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/constrs_1/imports/digilent-xdc-master/Nexys-A7-100T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/BlowfishOnBoard_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/BlowfishOnBoard_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1367.148 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1367.148 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1367.148 ; gain = 85.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1367.148 ; gain = 85.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1367.148 ; gain = 85.754
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'strCur_reg' in module 'Rs232RefComp'
+INFO: [Synth 8-802] inferred FSM for state register 'stbeCur_reg' in module 'Rs232RefComp'
+INFO: [Synth 8-802] inferred FSM for state register 'sttCur_reg' in module 'Rs232RefComp'
+WARNING: [Synth 8-6040] Register tmpAddr_reg driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6040] Register tmpAddr_reg driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6040] Register tmpAddr_reg driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6040] Register tmpAddr_reg driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'ControlUnit'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 sttidle |                              001 |                               00
+             stttransfer |                              010 |                               01
+                sttshift |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sttCur_reg' using encoding 'one-hot' in module 'Rs232RefComp'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 stridle |                               00 |                               00
+           streightdelay |                               01 |                               01
+              strgetdata |                               10 |                               10
+            strcheckstop |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'strCur_reg' using encoding 'sequential' in module 'Rs232RefComp'
+WARNING: [Synth 8-327] inferring latch for variable 'TBE_reg' [C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.srcs/sources_1/imports/7-Interfaccia seriale/RS232RefComp.vhd:313]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                stbeidle |                               00 |                               00
+              stbesettbe |                               01 |                               01
+            stbewaitload |                               10 |                               10
+           stbewaitwrite |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'stbeCur_reg' using encoding 'sequential' in module 'Rs232RefComp'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                      00000000001 |                             0000
+                      s1 |                      00000000010 |                             0001
+                      s2 |                      00000000100 |                             0010
+                      s3 |                      00000001000 |                             0011
+                      s4 |                      00000010000 |                             0100
+                      s5 |                      00000100000 |                             0101
+                      s6 |                      00001000000 |                             0110
+                      s7 |                      00010000000 |                             0111
+                      s8 |                      00100000000 |                             1000
+                      s9 |                      01000000000 |                             1001
+                     s10 |                      10000000000 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'ControlUnit'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1367.148 ; gain = 85.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 5     
+	   2 Input   14 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 4     
+	   2 Input    3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 5     
+	   8 Input      1 Bit         XORs := 1     
+	   9 Input      1 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 3     
+	               32 Bit    Registers := 23    
+	               14 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 5     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 20    
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 15    
+	   2 Input   14 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 5     
+	  11 Input   11 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 7     
+	   2 Input    1 Bit        Muxes := 9     
+	   4 Input    1 Bit        Muxes := 6     
+	  11 Input    1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-6040] Register f/s0/tmpAddr_reg driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6040] Register f/s1/tmpAddr_reg driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6040] Register f/s2/tmpAddr_reg driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6040] Register f/s3/tmpAddr_reg driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-3332] Sequential element (interfaccia/FSM_onehot_sttCur_reg[2]) is unused and will be removed from module BlowfishOnBoard.
+WARNING: [Synth 8-3332] Sequential element (interfaccia/FSM_onehot_sttCur_reg[1]) is unused and will be removed from module BlowfishOnBoard.
+WARNING: [Synth 8-3332] Sequential element (interfaccia/FSM_onehot_sttCur_reg[0]) is unused and will be removed from module BlowfishOnBoard.
+WARNING: [Synth 8-3332] Sequential element (interfaccia/TBE_reg) is unused and will be removed from module BlowfishOnBoard.
+WARNING: [Synth 8-3332] Sequential element (interfaccia/FSM_sequential_stbeCur_reg[1]) is unused and will be removed from module BlowfishOnBoard.
+WARNING: [Synth 8-3332] Sequential element (interfaccia/FSM_sequential_stbeCur_reg[0]) is unused and will be removed from module BlowfishOnBoard.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 1367.148 ; gain = 85.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|ROM         | ROM        | 256x32        | LUT            | 
+|ROM1        | ROM        | 256x32        | LUT            | 
+|ROM2        | ROM        | 256x32        | LUT            | 
+|ROM3        | ROM        | 256x32        | LUT            | 
+|Encrypter   | p_0_out    | 256x32        | LUT            | 
+|Encrypter   | p_0_out    | 256x32        | LUT            | 
+|Encrypter   | p_0_out    | 256x32        | LUT            | 
+|Encrypter   | p_0_out    | 256x32        | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 1367.148 ; gain = 85.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1384.113 ; gain = 102.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 1384.113 ; gain = 102.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1384.113 ; gain = 102.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1384.113 ; gain = 102.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 1384.113 ; gain = 102.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 1384.113 ; gain = 102.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 1384.113 ; gain = 102.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 1384.113 ; gain = 102.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++----------------+---------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name     | RTL Name                  | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++----------------+---------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|BlowfishOnBoard | interfaccia/rdSReg_reg[7] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++----------------+---------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    44|
+|3     |LUT1   |     5|
+|4     |LUT2   |    24|
+|5     |LUT3   |    85|
+|6     |LUT4   |    71|
+|7     |LUT5   |   144|
+|8     |LUT6   |   926|
+|9     |MUXF7  |   328|
+|10    |MUXF8  |    68|
+|11    |SRL16E |     1|
+|12    |FDCE   |     1|
+|13    |FDRE   |   716|
+|14    |FDSE   |   268|
+|15    |IBUF   |     4|
+|16    |OBUF   |    17|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 1384.113 ; gain = 102.719
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:47 ; elapsed = 00:00:55 . Memory (MB): peak = 1384.113 ; gain = 16.965
+Synthesis Optimization Complete : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 1384.113 ; gain = 102.719
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1384.762 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 440 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1388.453 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 32ce4119
+INFO: [Common 17-83] Releasing license: Synthesis
+196 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 1388.453 ; gain = 107.059
+INFO: [Common 17-1381] The checkpoint 'C:/Users/stefa_fil71sc/Desktop/BlowfishOnBoard/BlowfishOnBoard.runs/synth_1/BlowfishOnBoard.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file BlowfishOnBoard_utilization_synth.rpt -pb BlowfishOnBoard_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Feb  1 16:57:18 2023...

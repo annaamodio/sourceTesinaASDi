@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TB_SistemaTesting_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TB_SistemaTesting" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="86.110 ns"></ZoomStartTime>
+      <ZoomEndTime time="177.161 ns"></ZoomEndTime>
+      <Cursor1Time time="130.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="324"></NameColumnWidth>
+      <ValueColumnWidth column_width="154"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/TB_SistemaTesting/sCLK" type="logic">
+      <obj_property name="ElementShortName">sCLK</obj_property>
+      <obj_property name="ObjectShortName">sCLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_SistemaTesting/sRST" type="logic">
+      <obj_property name="ElementShortName">sRST</obj_property>
+      <obj_property name="ObjectShortName">sRST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_SistemaTesting/sRead" type="logic">
+      <obj_property name="ElementShortName">sRead</obj_property>
+      <obj_property name="ObjectShortName">sRead</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_SistemaTesting/uut/cu/enInput" type="logic">
+      <obj_property name="ElementShortName">enInput</obj_property>
+      <obj_property name="ObjectShortName">enInput</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_SistemaTesting/uut/PO/rom_sel/data_output" type="array">
+      <obj_property name="ElementShortName">data_output[3:0]</obj_property>
+      <obj_property name="ObjectShortName">data_output[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_SistemaTesting/uut/cu/saveOutput" type="logic">
+      <obj_property name="ElementShortName">saveOutput</obj_property>
+      <obj_property name="ObjectShortName">saveOutput</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_SistemaTesting/uut/cu/current_state" type="other">
+      <obj_property name="ElementShortName">current_state</obj_property>
+      <obj_property name="ObjectShortName">current_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_SistemaTesting/CLK_period" type="other">
+      <obj_property name="ElementShortName">CLK_period</obj_property>
+      <obj_property name="ObjectShortName">CLK_period</obj_property>
+   </wvobject>
+</wave_config>

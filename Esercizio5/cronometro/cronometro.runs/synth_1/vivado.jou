@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Dec  7 19:40:14 2022
+# Process ID: 8592
+# Current directory: C:/Users/rosariaritacanale/Documents/progetto/cronometroBoard/cronometroBoard.runs/synth_1
+# Command line: vivado.exe -log cronometro.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cronometro.tcl
+# Log file: C:/Users/rosariaritacanale/Documents/progetto/cronometroBoard/cronometroBoard.runs/synth_1/cronometro.vds
+# Journal file: C:/Users/rosariaritacanale/Documents/progetto/cronometroBoard/cronometroBoard.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source cronometro.tcl -notrace

@@ -1,0 +1,19 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../EX_11_DivisoreNonRestoring.srcs/sources_1/imports/Downloads/ControlUnit.vhd" \
+"../../../../EX_11_DivisoreNonRestoring.srcs/sources_1/imports/Downloads/DivisoreNonRestoring.vhd" \
+"../../../../../FFD.vhd" \
+"../../../../EX_11_DivisoreNonRestoring.srcs/sources_1/new/Parte_operativa.vhd" \
+"../../../../EX_11_DivisoreNonRestoring.srcs/sources_1/new/Reg_1.vhd" \
+"../../../../EX_11_DivisoreNonRestoring.srcs/sources_1/new/Reg_2.vhd" \
+"../../../../EX_11_DivisoreNonRestoring.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd" \
+"../../../../../adder_sub.vhd" \
+"../../../../EX_11_DivisoreNonRestoring.srcs/sources_1/imports/Downloads/counter.vhd" \
+"../../../../EX_11_DivisoreNonRestoring.srcs/sources_1/imports/Downloads/full_adder.vhd" \
+"../../../../EX_11_DivisoreNonRestoring.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd" \
+"../../../../../reg_pp.vhd" \
+"../../../../../ripple_carry.vhd" \
+"../../../../EX_11_DivisoreNonRestoring.srcs/sim_1/new/TB_DivisoreNonRestoring.vhd" \
+
+# Do not sort compile order
+nosort

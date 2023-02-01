@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Jan 26 11:12:29 2023
+# Process ID: 3400
+# Current directory: C:/Users/stefa_fil71sc/Desktop/Nuova cartella/Esercizio11_2_DivisoreOnBoard/Esercizio11_2_DivisoreOnBoard.runs/synth_1
+# Command line: vivado.exe -log DivisoreOnBoard.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DivisoreOnBoard.tcl
+# Log file: C:/Users/stefa_fil71sc/Desktop/Nuova cartella/Esercizio11_2_DivisoreOnBoard/Esercizio11_2_DivisoreOnBoard.runs/synth_1/DivisoreOnBoard.vds
+# Journal file: C:/Users/stefa_fil71sc/Desktop/Nuova cartella/Esercizio11_2_DivisoreOnBoard/Esercizio11_2_DivisoreOnBoard.runs/synth_1\vivado.jou
+# Running On: LAPTOP-UF85CVI8, OS: Windows, CPU Frequency: 3302 MHz, CPU Physical cores: 4, Host memory: 16843 MB
+#-----------------------------------------------------------
+source DivisoreOnBoard.tcl -notrace

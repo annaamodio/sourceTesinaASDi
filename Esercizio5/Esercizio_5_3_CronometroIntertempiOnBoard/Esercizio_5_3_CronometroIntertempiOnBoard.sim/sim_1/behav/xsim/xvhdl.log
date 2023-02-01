@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/new/Reg_sp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Reg_sp'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sim_1/imports/new/TB_Reg_sp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TB_Reg_sp'

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1674727945">
+  <File Type="PA-TCL" Name="DivisoreOnBoard.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="DivisoreOnBoard_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="DivisoreOnBoard_reports.tcl"/>
+  <File Type="RDS-RDS" Name="DivisoreOnBoard.vds"/>
+  <File Type="RDS-UTIL" Name="DivisoreOnBoard_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="DivisoreOnBoard_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="DivisoreOnBoard.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="DivisoreOnBoard_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="DivisoreOnBoard_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/ButtonDebouncer.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/ButtonDebouncer.vhd"/>
+        <Attr Name="ImportTime" Val="1674662850"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Comparatore.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Lib/Lib.srcs/sources_1/new/Comparatore.vhd"/>
+        <Attr Name="ImportTime" Val="1674058264"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/ControlUnit.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/ControlUnit.vhd"/>
+        <Attr Name="ImportTime" Val="1674561022"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/DivisoreNonRestoring.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/DivisoreNonRestoring.vhd"/>
+        <Attr Name="ImportTime" Val="1674561024"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Encoder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../EX_11_DivisoreNonRestoring/EX_11_DivisoreNonRestoring.srcs/sources_1/new/Encoder.vhd"/>
+        <Attr Name="ImportTime" Val="1674661151"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Nuova cartella/FFD.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../FFD.vhd"/>
+        <Attr Name="ImportTime" Val="1674569055"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Input_manager.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Output_manager.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../EX_11_DivisoreNonRestoring/EX_11_DivisoreNonRestoring.srcs/sources_1/new/Output_manager.vhd"/>
+        <Attr Name="ImportTime" Val="1674662607"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Parte_operativa.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Ex/Ex.srcs/sources_1/new/Parte_operativa.vhd"/>
+        <Attr Name="ImportTime" Val="1674561580"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Reg_1.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Ex/Ex.srcs/sources_1/new/Reg_1.vhd"/>
+        <Attr Name="ImportTime" Val="1674557767"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Reg_2.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Ex/Ex.srcs/sources_1/new/Reg_2.vhd"/>
+        <Attr Name="ImportTime" Val="1674557807"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/Selezionatore.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Lib/Lib.srcs/sources_1/new/Selezionatore.vhd"/>
+        <Attr Name="ImportTime" Val="1674321271"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Nuova cartella/adder_sub.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../adder_sub.vhd"/>
+        <Attr Name="ImportTime" Val="1674560047"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/anodes_manager.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/anodes_manager.vhd"/>
+        <Attr Name="ImportTime" Val="1674661339"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/cathodes_input_manager.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/cathodes_input_manager.vhd"/>
+        <Attr Name="ImportTime" Val="1674661435"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/cathodes_manager.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/cathodes_manager.vhd"/>
+        <Attr Name="ImportTime" Val="1674661341"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/clock_divider.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/clock_divider.vhd"/>
+        <Attr Name="ImportTime" Val="1674661341"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/counter.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/counter.vhd"/>
+        <Attr Name="ImportTime" Val="1674560654"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/counter_mod8.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/counter_mod8.vhd"/>
+        <Attr Name="ImportTime" Val="1674661434"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/display_seven_segments.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/display_seven_segments.vhd"/>
+        <Attr Name="ImportTime" Val="1674661342"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/full_adder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/full_adder.vhd"/>
+        <Attr Name="ImportTime" Val="1674559953"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Lib/Lib.srcs/sources_1/imports/Desktop/mux_2_1.vhd"/>
+        <Attr Name="ImportTime" Val="1674320490"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Nuova cartella/reg_pp.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../reg_pp.vhd"/>
+        <Attr Name="ImportTime" Val="1674557833"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Nuova cartella/ripple_carry.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ripple_carry.vhd"/>
+        <Attr Name="ImportTime" Val="1674560021"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/DivisoreOnBoard.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/DivisoreOnBoard.vhd"/>
+        <Attr Name="ImportTime" Val="1674662802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="DivisoreOnBoard"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/digilent-xdc-master/Nexys-A7-100T-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../OneDrive - Università di Napoli Federico II/Desktop/Uni/Magistrale/Primo Anno/Primo Semestre/Architettura_dei_sistemi_digitali/digilent-xdc-master/Nexys-A7-100T-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1628606177"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Jan 24 15:14:46 2023
+# Process ID: 11464
+# Current directory: C:/Users/stefa_fil71sc/Desktop/EX_11_DivisoreNonRestoring
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15820 C:\Users\stefa_fil71sc\Desktop\EX_11_DivisoreNonRestoring\EX_11_DivisoreNonRestoring.xpr
+# Log file: C:/Users/stefa_fil71sc/Desktop/EX_11_DivisoreNonRestoring/vivado.log
+# Journal file: C:/Users/stefa_fil71sc/Desktop/EX_11_DivisoreNonRestoring\vivado.jou
+# Running On: LAPTOP-UF85CVI8, OS: Windows, CPU Frequency: 3302 MHz, CPU Physical cores: 4, Host memory: 16843 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/stefa_fil71sc/Desktop/EX_11_DivisoreNonRestoring/EX_11_DivisoreNonRestoring.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source TB_DivisoreNonRestoring.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+source TB_DivisoreNonRestoring.tcl
+relaunch_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source TB_DivisoreNonRestoring.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source TB_DivisoreNonRestoring.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source TB_DivisoreNonRestoring.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+source TB_DivisoreNonRestoring.tcl
+close_sim

@@ -1,0 +1,19 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Esercizio11_2_DivisoreOnBoard.srcs/sources_1/imports/Downloads/ControlUnit.vhd" \
+"../../../../Esercizio11_2_DivisoreOnBoard.srcs/sources_1/imports/Downloads/DivisoreNonRestoring.vhd" \
+"../../../../Esercizio11_2_DivisoreOnBoard.srcs/sources_1/imports/Nuova cartella/FFD.vhd" \
+"../../../../Esercizio11_2_DivisoreOnBoard.srcs/sources_1/new/Parte_operativa.vhd" \
+"../../../../Esercizio11_2_DivisoreOnBoard.srcs/sources_1/new/Reg_1.vhd" \
+"../../../../Esercizio11_2_DivisoreOnBoard.srcs/sources_1/new/Reg_2.vhd" \
+"../../../../Esercizio11_2_DivisoreOnBoard.srcs/sources_1/imports/sources_1/new/Selezionatore.vhd" \
+"../../../../Esercizio11_2_DivisoreOnBoard.srcs/sources_1/imports/Nuova cartella/adder_sub.vhd" \
+"../../../../Esercizio11_2_DivisoreOnBoard.srcs/sources_1/imports/Downloads/counter.vhd" \
+"../../../../Esercizio11_2_DivisoreOnBoard.srcs/sources_1/imports/Downloads/full_adder.vhd" \
+"../../../../Esercizio11_2_DivisoreOnBoard.srcs/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd" \
+"../../../../Esercizio11_2_DivisoreOnBoard.srcs/sources_1/imports/Nuova cartella/reg_pp.vhd" \
+"../../../../Esercizio11_2_DivisoreOnBoard.srcs/sources_1/imports/Nuova cartella/ripple_carry.vhd" \
+"../../../../Esercizio11_2_DivisoreOnBoard.srcs/sim_1/new/TB_DivisoreNonRestoring.vhd" \
+
+# Do not sort compile order
+nosort

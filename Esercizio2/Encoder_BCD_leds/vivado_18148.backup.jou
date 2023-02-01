@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Dec 27 16:56:34 2022
+# Process ID: 18148
+# Current directory: C:/Users/stefa_fil71sc/Desktop/Encoder_BCD_leds
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28136 C:\Users\stefa_fil71sc\Desktop\Encoder_BCD_leds\Encoder_BCD_leds.xpr
+# Log file: C:/Users/stefa_fil71sc/Desktop/Encoder_BCD_leds/vivado.log
+# Journal file: C:/Users/stefa_fil71sc/Desktop/Encoder_BCD_leds\vivado.jou
+# Running On: LAPTOP-UF85CVI8, OS: Windows, CPU Frequency: 3302 MHz, CPU Physical cores: 4, Host memory: 16843 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/stefa_fil71sc/Desktop/Encoder_BCD_leds/Encoder_BCD_leds.xpr
+update_compile_order -fileset sources_1

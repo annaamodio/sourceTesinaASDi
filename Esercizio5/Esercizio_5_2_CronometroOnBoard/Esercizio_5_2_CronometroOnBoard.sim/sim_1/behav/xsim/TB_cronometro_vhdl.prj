@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../cronometro.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/clock_divider.vhd" \
+"../../../../cronometro.srcs/sources_1/new/counter.vhd" \
+"../../../../cronometro.srcs/sources_1/new/cronometro.vhd" \
+"../../../../cronometro.srcs/sim_1/new/TB_cronometro.vhd" \
+
+# Do not sort compile order
+nosort

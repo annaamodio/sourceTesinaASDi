@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1674728025">
+  <File Type="ROUTE-PWR" Name="DivisoreOnBoard_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="DivisoreOnBoard.tcl"/>
+  <File Type="BITSTR-MMI" Name="DivisoreOnBoard.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="DivisoreOnBoard_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="DivisoreOnBoard_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="DivisoreOnBoard_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="DivisoreOnBoard_reports.tcl"/>
+  <File Type="OPT-TIMING" Name="DivisoreOnBoard_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="DivisoreOnBoard_opt.dcp"/>
+  <File Type="OPT-DRC" Name="DivisoreOnBoard_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="DivisoreOnBoard.hwdef"/>
+  <File Type="PWROPT-DCP" Name="DivisoreOnBoard_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="DivisoreOnBoard_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="DivisoreOnBoard_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="DivisoreOnBoard_placed.dcp"/>
+  <File Type="PLACE-IO" Name="DivisoreOnBoard_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="DivisoreOnBoard_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="DivisoreOnBoard_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="DivisoreOnBoard_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="DivisoreOnBoard_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="DivisoreOnBoard_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="DivisoreOnBoard_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="DivisoreOnBoard.bin"/>
+  <File Type="PLACE-TIMING" Name="DivisoreOnBoard_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="DivisoreOnBoard_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="DivisoreOnBoard.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="DivisoreOnBoard_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="DivisoreOnBoard_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="DivisoreOnBoard_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="DivisoreOnBoard.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="DivisoreOnBoard_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="DivisoreOnBoard_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="DivisoreOnBoard_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="DivisoreOnBoard_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="DivisoreOnBoard_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="DivisoreOnBoard_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="DivisoreOnBoard_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="DivisoreOnBoard_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="DivisoreOnBoard_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="DivisoreOnBoard_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="DivisoreOnBoard_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="DivisoreOnBoard_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="DivisoreOnBoard_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="DivisoreOnBoard_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="DivisoreOnBoard_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="DivisoreOnBoard_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="DivisoreOnBoard_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="DivisoreOnBoard_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="DivisoreOnBoard_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="DivisoreOnBoard_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="DivisoreOnBoard_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="DivisoreOnBoard_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="DivisoreOnBoard_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="DivisoreOnBoard_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="DivisoreOnBoard_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="DivisoreOnBoard_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="DivisoreOnBoard_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="DivisoreOnBoard.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="DivisoreOnBoard_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="DivisoreOnBoard_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="DivisoreOnBoard.nky"/>
+  <File Type="BITSTR-BMM" Name="DivisoreOnBoard_bd.bmm"/>
+  <File Type="PDI-FILE" Name="DivisoreOnBoard.pdi"/>
+  <File Type="RCFI_FILE" Name="DivisoreOnBoard.rcfi"/>
+  <File Type="CFI_FILE" Name="DivisoreOnBoard.cfi"/>
+  <File Type="RNPI_FILE" Name="DivisoreOnBoard.rnpi"/>
+  <File Type="NPI_FILE" Name="DivisoreOnBoard.npi"/>
+  <File Type="RBD_FILE" Name="DivisoreOnBoard.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="DivisoreOnBoard.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="DivisoreOnBoard.sysdef"/>
+  <File Type="BG-BGN" Name="DivisoreOnBoard.bgn"/>
+  <File Type="BG-DRC" Name="DivisoreOnBoard.drc"/>
+  <File Type="RDI-RDI" Name="DivisoreOnBoard.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="DivisoreOnBoard_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="DivisoreOnBoard_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/ButtonDebouncer.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/ButtonDebouncer.vhd"/>
+        <Attr Name="ImportTime" Val="1674662850"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Comparatore.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Lib/Lib.srcs/sources_1/new/Comparatore.vhd"/>
+        <Attr Name="ImportTime" Val="1674058264"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/ControlUnit.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/ControlUnit.vhd"/>
+        <Attr Name="ImportTime" Val="1674561022"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/DivisoreNonRestoring.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/DivisoreNonRestoring.vhd"/>
+        <Attr Name="ImportTime" Val="1674561024"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Encoder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../EX_11_DivisoreNonRestoring/EX_11_DivisoreNonRestoring.srcs/sources_1/new/Encoder.vhd"/>
+        <Attr Name="ImportTime" Val="1674661151"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Nuova cartella/FFD.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../FFD.vhd"/>
+        <Attr Name="ImportTime" Val="1674569055"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Input_manager.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Output_manager.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../EX_11_DivisoreNonRestoring/EX_11_DivisoreNonRestoring.srcs/sources_1/new/Output_manager.vhd"/>
+        <Attr Name="ImportTime" Val="1674662607"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Parte_operativa.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Ex/Ex.srcs/sources_1/new/Parte_operativa.vhd"/>
+        <Attr Name="ImportTime" Val="1674561580"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Reg_1.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Ex/Ex.srcs/sources_1/new/Reg_1.vhd"/>
+        <Attr Name="ImportTime" Val="1674557767"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Reg_2.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Ex/Ex.srcs/sources_1/new/Reg_2.vhd"/>
+        <Attr Name="ImportTime" Val="1674557807"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/Selezionatore.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Lib/Lib.srcs/sources_1/new/Selezionatore.vhd"/>
+        <Attr Name="ImportTime" Val="1674321271"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Nuova cartella/adder_sub.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../adder_sub.vhd"/>
+        <Attr Name="ImportTime" Val="1674560047"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/anodes_manager.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/anodes_manager.vhd"/>
+        <Attr Name="ImportTime" Val="1674661339"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/cathodes_input_manager.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/cathodes_input_manager.vhd"/>
+        <Attr Name="ImportTime" Val="1674661435"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/cathodes_manager.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/cathodes_manager.vhd"/>
+        <Attr Name="ImportTime" Val="1674661341"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/clock_divider.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/clock_divider.vhd"/>
+        <Attr Name="ImportTime" Val="1674661341"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/counter.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/counter.vhd"/>
+        <Attr Name="ImportTime" Val="1674560654"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/counter_mod8.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/counter_mod8.vhd"/>
+        <Attr Name="ImportTime" Val="1674661434"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/display_seven_segments.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/display_seven_segments.vhd"/>
+        <Attr Name="ImportTime" Val="1674661342"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/full_adder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/full_adder.vhd"/>
+        <Attr Name="ImportTime" Val="1674559953"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/Desktop/mux_2_1.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Lib/Lib.srcs/sources_1/imports/Desktop/mux_2_1.vhd"/>
+        <Attr Name="ImportTime" Val="1674320490"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Nuova cartella/reg_pp.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../reg_pp.vhd"/>
+        <Attr Name="ImportTime" Val="1674557833"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Nuova cartella/ripple_carry.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ripple_carry.vhd"/>
+        <Attr Name="ImportTime" Val="1674560021"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/DivisoreOnBoard.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/DivisoreOnBoard.vhd"/>
+        <Attr Name="ImportTime" Val="1674662802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="DivisoreOnBoard"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/digilent-xdc-master/Nexys-A7-100T-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../OneDrive - Università di Napoli Federico II/Desktop/Uni/Magistrale/Primo Anno/Primo Semestre/Architettura_dei_sistemi_digitali/digilent-xdc-master/Nexys-A7-100T-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1628606177"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

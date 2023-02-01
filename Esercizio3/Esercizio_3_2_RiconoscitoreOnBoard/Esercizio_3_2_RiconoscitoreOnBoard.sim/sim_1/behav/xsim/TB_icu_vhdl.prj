@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../RicOnBoardTentativo.srcs/sources_1/imports/new/input_control_unit.vhd" \
+"../../../../RicOnBoardTentativo.srcs/sim_1/new/TB_icu.vhd" \
+
+# Do not sort compile order
+nosort

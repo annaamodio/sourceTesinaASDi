@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Esercizio10_switchMultistadio.srcs/sources_1/imports/aaaaaa/Demux_1_2.vhd" \
+"../../../../Esercizio10_switchMultistadio.srcs/sources_1/imports/aaaaaa/Omega_network.vhd" \
+"../../../../Esercizio10_switchMultistadio.srcs/sources_1/imports/aaaaaa/Rete_2_2.vhd" \
+"../../../../Esercizio10_switchMultistadio.srcs/sources_1/imports/aaaaaa/mux_2_1.vhd" \
+"../../../../Esercizio10_switchMultistadio.srcs/sim_1/imports/aaaaaa/TB_Omega_network.vhd" \
+
+# Do not sort compile order
+nosort

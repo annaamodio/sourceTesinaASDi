@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Oct 12 14:52:51 2022
+# Process ID: 15792
+# Current directory: C:/esempiVIVADO/4_SHIFTREG/4_SHIFTREG.sim/sim_1/synth/func/xsim
+# Command line: wbtcv.exe -mode batch -source C:/esempiVIVADO/4_SHIFTREG/4_SHIFTREG.sim/sim_1/synth/func/xsim/xsim.dir/shift_register_tb_func_synth/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/esempiVIVADO/4_SHIFTREG/4_SHIFTREG.sim/sim_1/synth/func/xsim/webtalk.log
+# Journal file: C:/esempiVIVADO/4_SHIFTREG/4_SHIFTREG.sim/sim_1/synth/func/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/esempiVIVADO/4_SHIFTREG/4_SHIFTREG.sim/sim_1/synth/func/xsim/xsim.dir/shift_register_tb_func_synth/webtalk/xsim_webtalk.tcl -notrace

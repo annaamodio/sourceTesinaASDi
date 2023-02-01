@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sun Jan  8 15:47:58 2023
+# Process ID: 10272
+# Current directory: C:/Users/stefa_fil71sc/Desktop/Esercizio_3_2_RiconoscitoreOnBoard
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18512 C:\Users\stefa_fil71sc\Desktop\Esercizio_3_2_RiconoscitoreOnBoard\Esercizio_3_2_RiconoscitoreOnBoard.xpr
+# Log file: C:/Users/stefa_fil71sc/Desktop/Esercizio_3_2_RiconoscitoreOnBoard/vivado.log
+# Journal file: C:/Users/stefa_fil71sc/Desktop/Esercizio_3_2_RiconoscitoreOnBoard\vivado.jou
+# Running On: LAPTOP-UF85CVI8, OS: Windows, CPU Frequency: 3302 MHz, CPU Physical cores: 4, Host memory: 16843 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/stefa_fil71sc/Desktop/Esercizio_3_2_RiconoscitoreOnBoard/Esercizio_3_2_RiconoscitoreOnBoard.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/stefa_fil71sc/Desktop/Esercizio_3_2_RiconoscitoreOnBoard/Esercizio_3_2_RiconoscitoreOnBoard.runs/impl_1/RiconoscitoreOnBoard.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/stefa_fil71sc/Desktop/Esercizio_3_2_RiconoscitoreOnBoard/Esercizio_3_2_RiconoscitoreOnBoard.runs/impl_1/RiconoscitoreOnBoard.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

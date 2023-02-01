@@ -1,0 +1,143 @@
+
+*** Running vivado
+    with args -log SYS_B.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source SYS_B.tcl
+
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source SYS_B.tcl -notrace
+Command: synth_design -top SYS_B -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 27468
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1282.109 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'SYS_B' [C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sources_1/new/SYS_B.vhd:18]
+INFO: [Synth 8-3491] module 'CU_B' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sources_1/new/CU_B.vhd:8' bound to instance 'cub' of component 'CU_B' [C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sources_1/new/SYS_B.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'CU_B' [C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sources_1/new/CU_B.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'CU_B' (0#1) [C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sources_1/new/CU_B.vhd:19]
+INFO: [Synth 8-3491] module 'Counter' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sources_1/imports/new/Contatore.vhd:5' bound to instance 'cont' of component 'Counter' [C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sources_1/new/SYS_B.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'Counter' [C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sources_1/imports/new/Contatore.vhd:19]
+	Parameter m bound to: 8 - type: integer 
+	Parameter n bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Counter' (0#1) [C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sources_1/imports/new/Contatore.vhd:19]
+INFO: [Synth 8-3491] module 'Memoria' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sources_1/new/Memoria.vhd:8' bound to instance 'mem' of component 'Memoria' [C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sources_1/new/SYS_B.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'Memoria' [C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sources_1/new/Memoria.vhd:26]
+	Parameter n bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Memoria' (0#1) [C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sources_1/new/Memoria.vhd:26]
+INFO: [Synth 8-3491] module 'Adder' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sources_1/new/Adder.vhd:6' bound to instance 'add' of component 'Adder' [C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sources_1/new/SYS_B.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'Adder' [C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sources_1/new/Adder.vhd:17]
+	Parameter m bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Adder' (0#1) [C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sources_1/new/Adder.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'SYS_B' (0#1) [C:/Users/stefa_fil71sc/Desktop/Esercizio_7_1_ComunicazioneHandshaking/Esercizio_7_1_ComunicazioneHandshaking.srcs/sources_1/new/SYS_B.vhd:18]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1282.109 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1282.109 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1282.109 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'CU_B'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                            00001 |                              000
+                      s0 |                            00010 |                              001
+                      s1 |                            00100 |                              010
+                      s2 |                            01000 |                              011
+                      s3 |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'CU_B'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1282.109 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 8     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   5 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   5 Input    1 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port RST_MEM in module SYS_B is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[7] in module SYS_B is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[6] in module SYS_B is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[5] in module SYS_B is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[4] in module SYS_B is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[3] in module SYS_B is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[2] in module SYS_B is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[1] in module SYS_B is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[0] in module SYS_B is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1282.109 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1282.109 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1282.109 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------

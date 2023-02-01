@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sat Oct 15 17:13:26 2022
+# Process ID: 28488
+# Current directory: C:/Users/stefa_fil71sc/Desktop/MUX_16_1/MUX_16_1.runs/synth_1
+# Command line: vivado.exe -log mux_16_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mux_16_1.tcl
+# Log file: C:/Users/stefa_fil71sc/Desktop/MUX_16_1/MUX_16_1.runs/synth_1/mux_16_1.vds
+# Journal file: C:/Users/stefa_fil71sc/Desktop/MUX_16_1/MUX_16_1.runs/synth_1\vivado.jou
+# Running On: LAPTOP-UF85CVI8, OS: Windows, CPU Frequency: 3302 MHz, CPU Physical cores: 4, Host memory: 16843 MB
+#-----------------------------------------------------------
+source mux_16_1.tcl -notrace

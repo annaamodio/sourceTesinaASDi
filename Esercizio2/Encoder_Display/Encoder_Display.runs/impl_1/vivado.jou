@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Oct 20 10:36:13 2022
+# Process ID: 22380
+# Current directory: C:/esempiVIVADO/6_BCD_ENCODER_board_display1cifra/6_BCD_ENCODER_board_display1cifra.runs/impl_1
+# Command line: vivado.exe -log Encoder_onBoard.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Encoder_onBoard.tcl -notrace
+# Log file: C:/esempiVIVADO/6_BCD_ENCODER_board_display1cifra/6_BCD_ENCODER_board_display1cifra.runs/impl_1/Encoder_onBoard.vdi
+# Journal file: C:/esempiVIVADO/6_BCD_ENCODER_board_display1cifra/6_BCD_ENCODER_board_display1cifra.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Encoder_onBoard.tcl -notrace

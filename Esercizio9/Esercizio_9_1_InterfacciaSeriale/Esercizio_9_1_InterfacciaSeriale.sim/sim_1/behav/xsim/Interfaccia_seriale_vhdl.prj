@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Esercizio_9_1_InterfacciaSeriale.srcs/sources_1/imports/display7seg/ButtonDebouncer.vhd" \
+"../../../../Esercizio_9_1_InterfacciaSeriale.srcs/sources_1/imports/Desktop/D_FF.vhd" \
+"../../../../Esercizio_9_1_InterfacciaSeriale.srcs/sources_1/imports/Downloads/RS232RefComp.vhd" \
+"../../../../Esercizio_9_1_InterfacciaSeriale.srcs/sources_1/new/SYS_A.vhd" \
+"../../../../Esercizio_9_1_InterfacciaSeriale.srcs/sources_1/imports/new/SYS_B.vhd" \
+"../../../../Esercizio_9_1_InterfacciaSeriale.srcs/sources_1/imports/Desktop/register_pp.vhd" \
+"../../../../Esercizio_9_1_InterfacciaSeriale.srcs/sources_1/new/Interfaccia_seriale.vhd" \
+
+# Do not sort compile order
+nosort

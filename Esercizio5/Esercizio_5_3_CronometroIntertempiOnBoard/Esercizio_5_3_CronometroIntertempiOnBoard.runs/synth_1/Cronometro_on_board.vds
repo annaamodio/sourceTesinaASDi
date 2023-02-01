@@ -1,0 +1,421 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Jan 10 18:21:06 2023
+# Process ID: 21572
+# Current directory: C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.runs/synth_1
+# Command line: vivado.exe -log Cronometro_on_board.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Cronometro_on_board.tcl
+# Log file: C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.runs/synth_1/Cronometro_on_board.vds
+# Journal file: C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.runs/synth_1\vivado.jou
+# Running On: LAPTOP-UF85CVI8, OS: Windows, CPU Frequency: 3302 MHz, CPU Physical cores: 4, Host memory: 16843 MB
+#-----------------------------------------------------------
+source Cronometro_on_board.tcl -notrace
+Command: synth_design -top Cronometro_on_board -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 21700
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1282.047 ; gain = 0.000
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-9112] actual for formal port 'data' is neither a static name nor a globally static expression [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Banco_registri.vhd:59]
+WARNING: [Synth 8-2551] possible infinite loop; process does not have a wait statement [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/cathodes_manager.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'Cronometro_on_board' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Cronometro_on_board.vhd:39]
+INFO: [Synth 8-3491] module 'rete_di_acquisizione' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/rete_di_acquisizione.vhd:34' bound to instance 'racq' of component 'rete_di_acquisizione' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Cronometro_on_board.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'rete_di_acquisizione' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/rete_di_acquisizione.vhd:44]
+INFO: [Synth 8-3491] module 'ButtonDebouncer' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/ButtonDebouncer.vhd:14' bound to instance 'db' of component 'ButtonDebouncer' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/rete_di_acquisizione.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'ButtonDebouncer' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/ButtonDebouncer.vhd:25]
+	Parameter CLK_period bound to: 10 - type: integer 
+	Parameter btn_noise_time bound to: 10000000 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/ButtonDebouncer.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'ButtonDebouncer' (0#1) [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/ButtonDebouncer.vhd:25]
+INFO: [Synth 8-3491] module 'input_control_unit' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/input_control_unit.vhd:34' bound to instance 'icu' of component 'input_control_unit' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/rete_di_acquisizione.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'input_control_unit' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/input_control_unit.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'input_control_unit' (0#1) [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/input_control_unit.vhd:43]
+	Parameter n bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'register_pp' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/register_pp.vhd:34' bound to instance 'reg_sec' of component 'register_pp' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/rete_di_acquisizione.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'register_pp' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/register_pp.vhd:48]
+	Parameter n bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'register_pp' (0#1) [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/register_pp.vhd:48]
+	Parameter n bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'register_pp' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/register_pp.vhd:34' bound to instance 'reg_min' of component 'register_pp' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/rete_di_acquisizione.vhd:122]
+	Parameter n bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'register_pp' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/register_pp.vhd:34' bound to instance 'reg_h' of component 'register_pp' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/rete_di_acquisizione.vhd:133]
+INFO: [Synth 8-638] synthesizing module 'register_pp__parameterized2' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/register_pp.vhd:48]
+	Parameter n bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'register_pp__parameterized2' (0#1) [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/register_pp.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'rete_di_acquisizione' (0#1) [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/rete_di_acquisizione.vhd:44]
+INFO: [Synth 8-3491] module 'Cronometro_intertempi' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Cronometro_intertempi.vhd:8' bound to instance 'cron_intertempi' of component 'Cronometro_intertempi' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Cronometro_on_board.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'Cronometro_intertempi' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Cronometro_intertempi.vhd:25]
+INFO: [Synth 8-3491] module 'cronometro' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/cronometro.vhd:34' bound to instance 'cron' of component 'cronometro' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Cronometro_intertempi.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'cronometro' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/cronometro.vhd:48]
+	Parameter clock_frequency_in bound to: 100000000 - type: integer 
+	Parameter clock_frequency_out bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/clock_divider.vhd:12' bound to instance 'time_base' of component 'clock_divider' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/cronometro.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'clock_divider' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/clock_divider.vhd:22]
+	Parameter clock_frequency_in bound to: 100000000 - type: integer 
+	Parameter clock_frequency_out bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clock_divider' (0#1) [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/clock_divider.vhd:22]
+	Parameter m bound to: 60 - type: integer 
+	Parameter n bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/counter.vhd:5' bound to instance 'seconds_counter' of component 'counter' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/cronometro.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'counter' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/counter.vhd:20]
+	Parameter m bound to: 60 - type: integer 
+	Parameter n bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter' (0#1) [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/counter.vhd:20]
+	Parameter m bound to: 60 - type: integer 
+	Parameter n bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/counter.vhd:5' bound to instance 'minutes_counter' of component 'counter' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/cronometro.vhd:121]
+	Parameter m bound to: 24 - type: integer 
+	Parameter n bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/counter.vhd:5' bound to instance 'hours_counter' of component 'counter' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/cronometro.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'counter__parameterized2' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/counter.vhd:20]
+	Parameter m bound to: 24 - type: integer 
+	Parameter n bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter__parameterized2' (0#1) [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/counter.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'cronometro' (0#1) [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/cronometro.vhd:48]
+INFO: [Synth 8-3491] module 'Gestore_tempo' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Gestore_tempo.vhd:34' bound to instance 'gt' of component 'Gestore_tempo' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Cronometro_intertempi.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'Gestore_tempo' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Gestore_tempo.vhd:50]
+INFO: [Synth 8-3491] module 'ButtonDebouncer' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/ButtonDebouncer.vhd:14' bound to instance 'db_visualizza' of component 'ButtonDebouncer' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Gestore_tempo.vhd:90]
+INFO: [Synth 8-3491] module 'ButtonDebouncer' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/ButtonDebouncer.vhd:14' bound to instance 'db_stop' of component 'ButtonDebouncer' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Gestore_tempo.vhd:98]
+INFO: [Synth 8-3491] module 'counter_mod8' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/counter_mod8.vhd:32' bound to instance 'count' of component 'counter_mod8' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Gestore_tempo.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'counter_mod8' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/counter_mod8.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'counter_mod8' (0#1) [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/counter_mod8.vhd:39]
+	Parameter n bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'Banco_registri' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Banco_registri.vhd:6' bound to instance 'br_s' of component 'Banco_registri' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Gestore_tempo.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'Banco_registri' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Banco_registri.vhd:23]
+	Parameter n bound to: 6 - type: integer 
+	Parameter n bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'Reg_sp' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/new/Reg_sp.vhd:8' bound to instance 'reg_i' of component 'Reg_sp' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Banco_registri.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'Reg_sp' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/new/Reg_sp.vhd:20]
+	Parameter n bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Reg_sp' (0#1) [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/new/Reg_sp.vhd:20]
+INFO: [Synth 8-3491] module 'MUX_8_1' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/Downloads/MUX_8_1.vhd:34' bound to instance 'mux_i' of component 'MUX_8_1' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Banco_registri.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'MUX_8_1' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/Downloads/MUX_8_1.vhd:41]
+INFO: [Synth 8-226] default block is never used [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/Downloads/MUX_8_1.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'MUX_8_1' (0#1) [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/Downloads/MUX_8_1.vhd:41]
+	Parameter n bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'Reg_sp' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/new/Reg_sp.vhd:8' bound to instance 'reg_i' of component 'Reg_sp' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Banco_registri.vhd:49]
+INFO: [Synth 8-3491] module 'MUX_8_1' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/Downloads/MUX_8_1.vhd:34' bound to instance 'mux_i' of component 'MUX_8_1' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Banco_registri.vhd:58]
+	Parameter n bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'Reg_sp' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/new/Reg_sp.vhd:8' bound to instance 'reg_i' of component 'Reg_sp' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Banco_registri.vhd:49]
+INFO: [Synth 8-3491] module 'MUX_8_1' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/Downloads/MUX_8_1.vhd:34' bound to instance 'mux_i' of component 'MUX_8_1' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Banco_registri.vhd:58]
+	Parameter n bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'Reg_sp' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/new/Reg_sp.vhd:8' bound to instance 'reg_i' of component 'Reg_sp' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Banco_registri.vhd:49]
+INFO: [Synth 8-3491] module 'MUX_8_1' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/Downloads/MUX_8_1.vhd:34' bound to instance 'mux_i' of component 'MUX_8_1' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Banco_registri.vhd:58]
+	Parameter n bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'Reg_sp' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/new/Reg_sp.vhd:8' bound to instance 'reg_i' of component 'Reg_sp' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Banco_registri.vhd:49]
+INFO: [Synth 8-3491] module 'MUX_8_1' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/Downloads/MUX_8_1.vhd:34' bound to instance 'mux_i' of component 'MUX_8_1' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Banco_registri.vhd:58]
+	Parameter n bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'Reg_sp' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/new/Reg_sp.vhd:8' bound to instance 'reg_i' of component 'Reg_sp' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Banco_registri.vhd:49]
+INFO: [Synth 8-3491] module 'MUX_8_1' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/Downloads/MUX_8_1.vhd:34' bound to instance 'mux_i' of component 'MUX_8_1' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Banco_registri.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'Banco_registri' (0#1) [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Banco_registri.vhd:23]
+	Parameter n bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'Banco_registri' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Banco_registri.vhd:6' bound to instance 'br_m' of component 'Banco_registri' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Gestore_tempo.vhd:123]
+	Parameter n bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'Banco_registri' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Banco_registri.vhd:6' bound to instance 'br_h' of component 'Banco_registri' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Gestore_tempo.vhd:133]
+INFO: [Synth 8-638] synthesizing module 'Banco_registri__parameterized2' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Banco_registri.vhd:23]
+	Parameter n bound to: 5 - type: integer 
+	Parameter n bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'Reg_sp' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/new/Reg_sp.vhd:8' bound to instance 'reg_i' of component 'Reg_sp' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Banco_registri.vhd:49]
+INFO: [Synth 8-3491] module 'MUX_8_1' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/Downloads/MUX_8_1.vhd:34' bound to instance 'mux_i' of component 'MUX_8_1' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Banco_registri.vhd:58]
+	Parameter n bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'Reg_sp' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/new/Reg_sp.vhd:8' bound to instance 'reg_i' of component 'Reg_sp' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Banco_registri.vhd:49]
+INFO: [Synth 8-3491] module 'MUX_8_1' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/Downloads/MUX_8_1.vhd:34' bound to instance 'mux_i' of component 'MUX_8_1' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Banco_registri.vhd:58]
+	Parameter n bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'Reg_sp' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/new/Reg_sp.vhd:8' bound to instance 'reg_i' of component 'Reg_sp' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Banco_registri.vhd:49]
+INFO: [Synth 8-3491] module 'MUX_8_1' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/Downloads/MUX_8_1.vhd:34' bound to instance 'mux_i' of component 'MUX_8_1' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Banco_registri.vhd:58]
+	Parameter n bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'Reg_sp' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/new/Reg_sp.vhd:8' bound to instance 'reg_i' of component 'Reg_sp' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Banco_registri.vhd:49]
+INFO: [Synth 8-3491] module 'MUX_8_1' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/Downloads/MUX_8_1.vhd:34' bound to instance 'mux_i' of component 'MUX_8_1' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Banco_registri.vhd:58]
+	Parameter n bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'Reg_sp' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/new/Reg_sp.vhd:8' bound to instance 'reg_i' of component 'Reg_sp' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Banco_registri.vhd:49]
+INFO: [Synth 8-3491] module 'MUX_8_1' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/Downloads/MUX_8_1.vhd:34' bound to instance 'mux_i' of component 'MUX_8_1' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Banco_registri.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'Banco_registri__parameterized2' (0#1) [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Banco_registri.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'Gestore_tempo' (0#1) [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Gestore_tempo.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'Cronometro_intertempi' (0#1) [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Cronometro_intertempi.vhd:25]
+INFO: [Synth 8-3491] module 'OutputManager' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/OutputManager.vhd:27' bound to instance 'OM' of component 'OutputManager' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Cronometro_on_board.vhd:114]
+INFO: [Synth 8-638] synthesizing module 'OutputManager' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/OutputManager.vhd:41]
+INFO: [Synth 8-3491] module 'Encoder' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/Encoder.vhd:35' bound to instance 'enc' of component 'Encoder' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/OutputManager.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'Encoder' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/Encoder.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'Encoder' (0#1) [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/Encoder.vhd:44]
+	Parameter clock_frequency_in bound to: 100000000 - type: integer 
+	Parameter clock_frequency_out bound to: 500 - type: integer 
+INFO: [Synth 8-3491] module 'display_seven_segments' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/display_seven_segments.vhd:32' bound to instance 'display' of component 'display_seven_segments' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/OutputManager.vhd:80]
+INFO: [Synth 8-638] synthesizing module 'display_seven_segments' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/display_seven_segments.vhd:46]
+	Parameter clock_frequency_in bound to: 100000000 - type: integer 
+	Parameter clock_frequency_out bound to: 500 - type: integer 
+	Parameter clock_frequency_in bound to: 100000000 - type: integer 
+	Parameter clock_frequency_out bound to: 500 - type: integer 
+INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/clock_divider.vhd:12' bound to instance 'clk_divider_instance' of component 'clock_divider' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/display_seven_segments.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'clock_divider__parameterized1' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/clock_divider.vhd:22]
+	Parameter clock_frequency_in bound to: 100000000 - type: integer 
+	Parameter clock_frequency_out bound to: 500 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clock_divider__parameterized1' (0#1) [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/clock_divider.vhd:22]
+INFO: [Synth 8-3491] module 'counter_mod8' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/counter_mod8.vhd:32' bound to instance 'counter_instance' of component 'counter_mod8' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/display_seven_segments.vhd:117]
+INFO: [Synth 8-3491] module 'cathodes_input_manager' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/cathodes_input_manager.vhd:11' bound to instance 'cathodes_input_man_instance' of component 'cathodes_input_manager' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/display_seven_segments.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'cathodes_input_manager' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/cathodes_input_manager.vhd:21]
+INFO: [Synth 8-226] default block is never used [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/cathodes_input_manager.vhd:25]
+INFO: [Synth 8-226] default block is never used [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/cathodes_input_manager.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'cathodes_input_manager' (0#1) [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/cathodes_input_manager.vhd:21]
+INFO: [Synth 8-3491] module 'cathodes_manager' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/cathodes_manager.vhd:32' bound to instance 'cathodes_instance' of component 'cathodes_manager' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/display_seven_segments.vhd:133]
+INFO: [Synth 8-638] synthesizing module 'cathodes_manager' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/cathodes_manager.vhd:38]
+INFO: [Synth 8-226] default block is never used [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/cathodes_manager.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'cathodes_manager' (0#1) [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/cathodes_manager.vhd:38]
+INFO: [Synth 8-3491] module 'anodes_manager' declared at 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/anodes_manager.vhd:32' bound to instance 'anodes_instance' of component 'anodes_manager' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/display_seven_segments.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'anodes_manager' [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/anodes_manager.vhd:39]
+INFO: [Synth 8-226] default block is never used [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/anodes_manager.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'anodes_manager' (0#1) [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/anodes_manager.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'display_seven_segments' (0#1) [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/display_seven_segments.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'OutputManager' (0#1) [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/imports/display7seg/OutputManager.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Cronometro_on_board' (0#1) [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/sources_1/new/Cronometro_on_board.vhd:39]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1282.047 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1282.047 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1282.047 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1282.047 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/constrs_1/imports/Downloads/Nexys-A7-100T-Master.xdc]
+Finished Parsing XDC File [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/constrs_1/imports/Downloads/Nexys-A7-100T-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.srcs/constrs_1/imports/Downloads/Nexys-A7-100T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Cronometro_on_board_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Cronometro_on_board_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1356.914 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1356.914 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1356.914 ; gain = 74.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1356.914 ; gain = 74.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1356.914 ; gain = 74.867
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'BTN_state_reg' in module 'ButtonDebouncer'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'input_control_unit'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                released |                               00 |                               00
+            pressed_vrfy |                               01 |                               01
+          pressed_cnfrmd |                               10 |                               10
+           released_vrfy |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'BTN_state_reg' using encoding 'sequential' in module 'ButtonDebouncer'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                          0000001 |                              000
+                   loads |                          0000010 |                              001
+              seconds_ok |                          0000100 |                              100
+                   loadm |                          0001000 |                              010
+              minutes_ok |                          0010000 |                              101
+                   loadh |                          0100000 |                              011
+                hours_ok |                          1000000 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'input_control_unit'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1356.914 ; gain = 74.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   2 Input   27 Bit       Adders := 1     
+	   2 Input   18 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               27 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	                7 Bit    Registers := 17    
+	                6 Bit    Registers := 4     
+	                5 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 6     
+	   4 Input   32 Bit        Muxes := 3     
+	   2 Input   27 Bit        Muxes := 1     
+	   2 Input   18 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 1     
+	   7 Input    7 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 4     
+	   2 Input    6 Bit        Muxes := 4     
+	   2 Input    5 Bit        Muxes := 2     
+	  11 Input    4 Bit        Muxes := 3     
+	   7 Input    4 Bit        Muxes := 2     
+	   4 Input    4 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 3     
+	   2 Input    2 Bit        Muxes := 12    
+	   4 Input    1 Bit        Muxes := 12    
+	   7 Input    1 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1356.914 ; gain = 74.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1356.914 ; gain = 74.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1356.914 ; gain = 74.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1356.914 ; gain = 74.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1356.914 ; gain = 74.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1356.914 ; gain = 74.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1356.914 ; gain = 74.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1356.914 ; gain = 74.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1356.914 ; gain = 74.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1356.914 ; gain = 74.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    36|
+|3     |LUT1   |     4|
+|4     |LUT2   |    84|
+|5     |LUT3   |    16|
+|6     |LUT4   |    47|
+|7     |LUT5   |    41|
+|8     |LUT6   |    69|
+|9     |MUXF7  |    19|
+|10    |FDRE   |   289|
+|11    |FDSE   |    34|
+|12    |IBUF   |    12|
+|13    |OBUF   |    16|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1356.914 ; gain = 74.867
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 1356.914 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1356.914 ; gain = 74.867
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1356.914 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 55 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1359.457 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: b6a5e84e
+INFO: [Common 17-83] Releasing license: Synthesis
+122 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1359.457 ; gain = 77.410
+INFO: [Common 17-1381] The checkpoint 'C:/Users/stefa_fil71sc/Desktop/Esercizio_5_3_CronometroIntertempiOnBoard/Esercizio_5_3_CronometroIntertempiOnBoard.runs/synth_1/Cronometro_on_board.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Cronometro_on_board_utilization_synth.rpt -pb Cronometro_on_board_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 10 18:21:47 2023...

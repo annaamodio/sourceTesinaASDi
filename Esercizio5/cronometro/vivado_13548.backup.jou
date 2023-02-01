@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Fri Dec 30 15:07:19 2022
+# Process ID: 13548
+# Current directory: C:/Users/stefa_fil71sc/Desktop/cronometro
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6256 C:\Users\stefa_fil71sc\Desktop\cronometro\cronometro.xpr
+# Log file: C:/Users/stefa_fil71sc/Desktop/cronometro/vivado.log
+# Journal file: C:/Users/stefa_fil71sc/Desktop/cronometro\vivado.jou
+# Running On: LAPTOP-UF85CVI8, OS: Windows, CPU Frequency: 3302 MHz, CPU Physical cores: 4, Host memory: 16843 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/stefa_fil71sc/Desktop/cronometro/cronometro.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source TB_counter.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TB_cronometro [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+close_sim

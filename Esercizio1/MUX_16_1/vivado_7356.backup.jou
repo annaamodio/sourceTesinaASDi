@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sat Oct 15 17:05:42 2022
+# Process ID: 7356
+# Current directory: C:/Users/stefa_fil71sc/Desktop/MUX_16_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14548 C:\Users\stefa_fil71sc\Desktop\MUX_16_1\MUX_16_1.xpr
+# Log file: C:/Users/stefa_fil71sc/Desktop/MUX_16_1/vivado.log
+# Journal file: C:/Users/stefa_fil71sc/Desktop/MUX_16_1\vivado.jou
+# Running On: LAPTOP-UF85CVI8, OS: Windows, CPU Frequency: 3302 MHz, CPU Physical cores: 4, Host memory: 16843 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/stefa_fil71sc/Desktop/MUX_16_1/MUX_16_1.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+reset_run synth_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+launch_simulation
+source TB_MUX_16_1.tcl
+close_sim

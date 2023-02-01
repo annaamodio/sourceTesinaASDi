@@ -1,0 +1,88 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jan  9 13:40:34 2023
+| Host         : LAPTOP-UF85CVI8 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Cronometro_on_board_control_sets_placed.rpt
+| Design       : Cronometro_on_board
+| Device       : xc7a100t
+------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    10 |
+|    Minimum number of control sets                        |    10 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    37 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    10 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     4 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     2 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               1 |            1 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              65 |           19 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              65 |           26 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+--------------------------------------+-------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |             Enable Signal            |        Set/Reset Signal       | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+--------------------------------------+-------------------------------+------------------+----------------+--------------+
+|  CLK_IBUF_BUFG |                                      |                               |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG | racq/icu/E[0]                        | RST_IBUF                      |                3 |              5 |         1.67 |
+| ~CLK_IBUF_BUFG | cron/minutes_counter/E[0]            | RST_IBUF                      |                2 |              5 |         2.50 |
+|  CLK_IBUF_BUFG | racq/icu/load_s_reg_0[0]             | RST_IBUF                      |                3 |              6 |         2.00 |
+|  CLK_IBUF_BUFG | racq/icu/load_m_reg_0[0]             | RST_IBUF                      |                2 |              6 |         3.00 |
+| ~CLK_IBUF_BUFG | cron/seconds_counter/Tcount_reg_0[0] | RST_IBUF                      |                3 |              6 |         2.00 |
+| ~CLK_IBUF_BUFG | cron/time_base/E[0]                  | RST_IBUF                      |                2 |              6 |         3.00 |
+|  CLK_IBUF_BUFG | racq/db/deb.count[31]_i_2_n_0        | racq/db/deb.count[19]_i_1_n_0 |                4 |             11 |         2.75 |
+|  CLK_IBUF_BUFG | racq/db/deb.count[31]_i_2_n_0        | racq/db/deb.count[31]_i_1_n_0 |                7 |             20 |         2.86 |
+|  CLK_IBUF_BUFG |                                      | RST_IBUF                      |               19 |             65 |         3.42 |
++----------------+--------------------------------------+-------------------------------+------------------+----------------+--------------+
+
+

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="shift_register_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="shift_register_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="744.710 ns"></ZoomStartTime>
+      <ZoomEndTime time="929.311 ns"></ZoomEndTime>
+      <Cursor1Time time="540.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="307"></NameColumnWidth>
+      <ValueColumnWidth column_width="146"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/shift_register_tb/clk_tb" type="logic">
+      <obj_property name="ElementShortName">clk_tb</obj_property>
+      <obj_property name="ObjectShortName">clk_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/shift_register_tb/input" type="logic">
+      <obj_property name="ElementShortName">input</obj_property>
+      <obj_property name="ObjectShortName">input</obj_property>
+   </wvobject>
+   <wvobject fp_name="/shift_register_tb/direction" type="logic">
+      <obj_property name="ElementShortName">direction</obj_property>
+      <obj_property name="ObjectShortName">direction</obj_property>
+   </wvobject>
+   <wvobject fp_name="/shift_register_tb/increment" type="logic">
+      <obj_property name="ElementShortName">increment</obj_property>
+      <obj_property name="ObjectShortName">increment</obj_property>
+   </wvobject>
+   <wvobject fp_name="/shift_register_tb/output" type="logic">
+      <obj_property name="ElementShortName">output</obj_property>
+      <obj_property name="ObjectShortName">output</obj_property>
+   </wvobject>
+   <wvobject fp_name="/shift_register_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/shift_register_tb/uut/tempY" type="array">
+      <obj_property name="ElementShortName">tempY[9:0]</obj_property>
+      <obj_property name="ObjectShortName">tempY[9:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/shift_register_tb/clk_period" type="other">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+</wave_config>

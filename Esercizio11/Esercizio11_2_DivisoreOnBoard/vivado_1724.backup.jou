@@ -1,0 +1,59 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Jan 25 17:54:38 2023
+# Process ID: 1724
+# Current directory: C:/Users/stefa_fil71sc/Desktop/Nuova cartella/Esercizio11_2_DivisoreOnBoard
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19836 C:\Users\stefa_fil71sc\Desktop\Nuova cartella\Esercizio11_2_DivisoreOnBoard\Esercizio11_2_DivisoreOnBoard.xpr
+# Log file: C:/Users/stefa_fil71sc/Desktop/Nuova cartella/Esercizio11_2_DivisoreOnBoard/vivado.log
+# Journal file: C:/Users/stefa_fil71sc/Desktop/Nuova cartella/Esercizio11_2_DivisoreOnBoard\vivado.jou
+# Running On: LAPTOP-UF85CVI8, OS: Windows, CPU Frequency: 3302 MHz, CPU Physical cores: 4, Host memory: 16843 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/stefa_fil71sc/Desktop/Nuova cartella/Esercizio11_2_DivisoreOnBoard/Esercizio11_2_DivisoreOnBoard.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+launch_runs synth_1 -jobs 8
+launch_runs synth_1 -jobs 8
+create_run synth_2 -flow {Vivado Synthesis 2022}
+launch_runs synth_2 -jobs 8
+wait_on_run synth_2
+launch_runs synth_1 -jobs 8
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1 -prev_step 
+launch_runs synth_1 -jobs 8
+reset_run synth_1 -from_step synth_design
+launch_runs synth_1 -next_step 
+set_property AUTO_INCREMENTAL_CHECKPOINT 0 [get_runs synth_1]
+set_property incremental_checkpoint {} [get_runs synth_1]
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+launch_simulation
+source TB_DivisoreNonRestoring.tcl
+close_sim
+launch_simulation
+source TB_DivisoreNonRestoring.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source TB_DivisoreNonRestoring.tcl
+relaunch_sim
+close_sim
+launch_simulation
+launch_simulation
+source TB_DivisoreNonRestoring.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+close_sim
