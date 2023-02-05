@@ -26,7 +26,8 @@ end Memoria;
 architecture Behavioral of Memoria is
 
 type mem_type is array (n-1 downto 0) of std_logic_vector(m-1 downto 0);
-signal mem: mem_type:= (
+signal mem: mem_type;
+signal reset_mem: mem_type := (
     0=> "00001111",
     1=> "00001000",
     2=> "00001100",
@@ -46,7 +47,7 @@ begin
     begin 
         if (CLK'event and CLK = '0') then
             if( RST = '1' ) then
-                mem <= (others => (others => '0'));             
+                mem <= reset_mem ;             
             elsif( Rin = '1') then
                 mem(t_addr) <= data_in;
             end if;

@@ -7,7 +7,6 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity SYS_A is
     Port ( CLK : in STD_LOGIC;
            RST : in STD_LOGIC;
-           RST_MEM: in std_logic;
            start : in STD_LOGIC;
            ok : in STD_LOGIC;
            send : out STD_LOGIC;
@@ -30,21 +29,12 @@ architecture Structural of SYS_A is
     end component;
 
 
-    component Memoria 
-        generic (
-            n : integer := 8; --numero registri
-            k : integer := 3; --numero bto selezione=log_2(n)
-            m : integer := 8  --numero bit per registro
-        );
+    component ROM is
         port(
-            CLK : in std_logic;
-            RST : in std_logic;
-            data_in : in std_logic_vector(m-1 downto 0);
-            Rin : in std_logic;
-            addr: in std_logic_vector(k-1 downto 0);
-            data_out : out std_logic_vector(m-1 downto 0)
-            
+            addr : in std_logic_vector(2 downto 0);
+            data_out : out std_logic_vector(7 downto 0)
         );
+        
     end component;
 
     component Counter 
@@ -91,19 +81,11 @@ begin
         tmp_FineConteggio
     );
     
-    mem: Memoria 
-    port map(
-        CLK,
-        RST_MEM,
-        tmp_data_in,
-        tmp_Rin,
-        tmp_addr,
+    mem_rom: ROM port map(
+        tmp_addr, 
         data
-        
-    );
-
-
-
+    ); 
+    
 
 
 

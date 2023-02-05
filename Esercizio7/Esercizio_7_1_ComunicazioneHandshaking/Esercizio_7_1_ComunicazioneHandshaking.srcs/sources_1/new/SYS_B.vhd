@@ -8,7 +8,6 @@ entity SYS_B is
     Port ( 
         CLK : in STD_LOGIC;
         RST : in STD_LOGIC;
-        RST_MEM : in std_logic;
         send : in STD_LOGIC;
         data_in : in STD_LOGIC_VECTOR (7 downto 0);
         ok : out STD_LOGIC
@@ -91,7 +90,7 @@ begin
     
     mem: Memoria port map(
         CLK,
-        RST_MEM,
+        RST,
         tmp_data_in_add,
         tmp_Rin,
         tmp_addr,

@@ -39,7 +39,6 @@ architecture Behavioral of TB_Handshaking is
     component SYS_A
         Port ( CLK : in STD_LOGIC;
                RST : in STD_LOGIC;
-               RST_MEM: in std_logic;
                start : in STD_LOGIC;
                ok : in STD_LOGIC;
                send : out STD_LOGIC;
@@ -49,7 +48,6 @@ architecture Behavioral of TB_Handshaking is
         Port ( 
             CLK : in STD_LOGIC;
             RST : in STD_LOGIC;
-            RST_MEM : in std_logic;
             send : in STD_LOGIC;
             data_in : in STD_LOGIC_VECTOR (7 downto 0);
             ok : out STD_LOGIC
@@ -59,7 +57,6 @@ architecture Behavioral of TB_Handshaking is
     signal clk_a : std_logic := '0'; 
     signal clk_b : std_logic := '0'; 
     signal reset : std_logic := '0';
-    signal reset_mem : std_logic := '0';
     signal tmp_start : std_logic := '0';
     signal tmp_ok : std_logic := '0'; 
     signal tmp_send : std_logic := '0'; 
@@ -92,7 +89,6 @@ begin
     s_a: SYS_A port map(
         clk_a,
         reset,
-        reset_mem,
         tmp_start,
         tmp_ok,
         tmp_send,
@@ -103,7 +99,6 @@ begin
     s_b: SYS_B port map(
         clk_b,
         reset,
-        reset_mem,
         tmp_send,
         tmp_data,
         tmp_ok   
