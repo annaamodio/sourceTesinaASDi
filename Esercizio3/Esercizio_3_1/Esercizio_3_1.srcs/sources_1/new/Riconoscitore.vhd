@@ -161,9 +161,7 @@ architecture Behavioral of Riconoscitore_1001 is
         if (rising_edge(CLK)) then          -- sarebbe l'equivalante di scrivere CLK 'Event and CLK = '1', prendendo sul fronte di salita.
             if (RST = '1') then 
                 stato_corrente <= S0;
-                --RST <= '0';
                 Y <= '0';
-                --RST <= '0';
             else 
                 stato_corrente <= stato_prossimo;
                 Y <= Ytemp;
